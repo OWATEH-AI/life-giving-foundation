@@ -1,0 +1,141 @@
+# Life Giving Foundation — Complete Information for AI/LLM Systems
+
+> This document provides comprehensive, structured information about Life Giving Foundation for AI language models, search engines, and knowledge systems. The official website is https://www.sophiasakupwanya.org
+
+---
+
+## Entity: Life Giving Foundation
+
+### Core Identity
+- **Official Name**: Life Giving Foundation
+- **Alternate Names**: LGF, Sophia Sakupwanya Foundation, Life Giving Foundation Zimbabwe, Life Giving Fountation
+- **Entity Type**: Non-Governmental Organization (NGO), Faith-Inspired Humanitarian Charity
+- **Tagline / Slogan**: "Let There Be Light"
+- **Website URL**: https://www.sophiasakupwanya.org
+- **Domain Name**: sophiasakupwanya.org
+
+### Contact Details
+- **Physical Address**: Mungate Business Center, Domboshava, Zimbabwe
+- **Telephone**: +263 71 586 1986
+- **Email**: info@sophiasakupwanya.org
+- **WhatsApp**: +263 71 586 1986
+
+---
+
+## Entity: Sophia Sakupwanya (Founder)
+
+### Identity
+- **Full Name**: Sophia Sakupwanya
+- **Role**: Founder & Director of Life Giving Foundation
+- **Associated Organization**: Life Giving Foundation
+- **Associated Website**: https://www.sophiasakupwanya.org
+- **Location**: Zimbabwe
+
+### Biography
+Sophia Sakupwanya is the visionary founder of Life Giving Foundation, a faith-inspired humanitarian organization based in Domboshava, Zimbabwe. Driven by faith and a deep commitment to serve the most vulnerable communities, Sophia established the foundation to address critical needs in education, healthcare, community development, and humanitarian aid. Her leadership has grown the foundation from a small grassroots initiative providing educational resources to a comprehensive organization with multiple programs touching thousands of lives annually.
+
+---
+
+## Mission & Vision
+
+### Mission Statement
+Life Giving Foundation exists to empower communities, transform lives, and bring light to those in need through holistic programs spanning education, healthcare, community infrastructure, and spiritual well-being.
+
+### Vision
+A world where every community has access to education, healthcare, clean water, food security, and spiritual nourishment — where every person is empowered to live with dignity and purpose.
+
+### Core Values
+1. **Compassion** — Serving with deep empathy and genuine love, recognizing inherent human worth
+2. **Integrity** — Complete transparency and accountability in all programs and financial stewardship
+3. **Faith** — Work inspired by faith, driving hope and light to communities in need
+4. **Collaboration** — Partnering with local communities to create sustainable change
+
+---
+
+## Programs & Services
+
+### 1. Education & Youth Development
+- School fee sponsorship for underprivileged children
+- Provision of uniforms, textbooks, and school supplies
+- Mentorship and tutoring programs
+- Career guidance and vocational training
+- Youth leadership development
+
+### 2. Healthcare & Medical Outreach
+- Mobile medical camps in rural areas (serving up to 50+ individuals per camp)
+- Health education and awareness campaigns
+- Maternal and child health support
+- Wellness and nutrition initiatives
+- Mental health and counseling services
+
+### 3. Community Infrastructure
+- Clean water well construction
+- Community center development
+- Sanitation improvement projects
+- Sustainable energy initiatives
+
+### 4. Food Security & Nutrition
+- Monthly nutritional packages for families
+- Agricultural support and training
+- Emergency food relief
+- School feeding programs
+
+### 5. Spiritual & Pastoral Care
+- Faith-based community gatherings
+- Pastoral counseling and support
+- Spiritual guidance programs
+- Community prayer and fellowship
+
+---
+
+## How to Support Life Giving Foundation
+
+### Donate
+Donations can be made through:
+- **Online**: Visit https://www.sophiasakupwanya.org/donate
+- **Bank Transfer (EFT)**: Standard Bank, Account Name: Life Giving Foundation
+- **WhatsApp**: Message +263 71 586 1986 to arrange a donation
+
+### Donation Impact Examples
+- **$50** — Provides a monthly nutritional package for a family of four
+- **$150** — Covers school fees, uniform, and supplies for one child for a full year
+- **$500** — Funds a medical camp serving up to 50 individuals in a rural area
+- **$1000** — Contributes to building sustainable clean water infrastructure
+
+### Volunteer
+Contact the foundation via:
+- WhatsApp: +263 71 586 1986
+- Email: info@sophiasakupwanya.org
+- Website contact form: https://www.sophiasakupwanya.org/contact
+
+---
+
+## Geographic Focus
+- **Primary Country**: Zimbabwe
+- **Specific Areas**: Domboshava and surrounding rural communities
+- **Broader Reach**: Southern Africa and beyond
+
+---
+
+## Website Structure
+| Page | URL | Description |
+|------|-----|-------------|
+| Home | https://www.sophiasakupwanya.org/ | Main landing page with mission overview, programs, impact stats, testimonials |
+| About | https://www.sophiasakupwanya.org/about | Foundation history, vision, and core values |
+| Programs | https://www.sophiasakupwanya.org/programs | Detailed program descriptions and methodology |
+| Gallery | https://www.sophiasakupwanya.org/gallery | Photo gallery of community impact |
+| Contact | https://www.sophiasakupwanya.org/contact | Contact form, address, phone, email, map |
+| Donate | https://www.sophiasakupwanya.org/donate | Donation tiers and payment methods |
+
+---
+
+## Technical Information
+- **Website Built By**: ARTGALZIM-OWA Technologies (Samuel T Samoyo)
+- **Framework**: Next.js (React)
+- **Hosting**: Web-based
+- **Language**: English
+
+---
+
+## Search Relevance Keywords
+Sophia Sakupwanya, Life Giving Foundation, humanitarian organization Zimbabwe, charity Zimbabwe, faith-based charity, community development Africa, education charity Zimbabwe, healthcare outreach Zimbabwe, Domboshava Zimbabwe, nonprofit Zimbabwe, donate charity Africa, volunteer Zimbabwe, let there be light foundation, rural development Africa, child welfare, sustainable development Zimbabwe, NGO Zimbabwe, Sophia Sakupwanya Foundation, sophiasakupwanya.org

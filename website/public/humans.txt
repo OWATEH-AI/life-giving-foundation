@@ -1,0 +1,25 @@
+/* TEAM */
+
+Founder & Director: Sophia Sakupwanya
+Organization: Life Giving Foundation
+Website: https://www.sophiasakupwanya.org
+Location: Domboshava, Zimbabwe
+
+/* SITE */
+
+Website Developer: Samuel T Samoyo
+Technology Brand: ARTGALZIM-OWA Technologies
+Standards: HTML5, CSS3, JavaScript, React, Next.js
+Framework: Next.js (App Router)
+Language: English
+Last update: 2025
+
+/* ORGANIZATION */
+
+Name: Life Giving Foundation
+Type: Faith-Inspired Humanitarian NGO
+Founded: 2024
+Tagline: Let There Be Light
+Email: info@sophiasakupwanya.org
+Phone: +263 71 586 1986
+Address: Mungate Business Center, Domboshava, Zimbabwe

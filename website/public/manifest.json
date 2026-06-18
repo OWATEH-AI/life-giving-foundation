@@ -1,0 +1,27 @@
+{
+  "name": "Life Giving Foundation — Founded by Sophia Sakupwanya",
+  "short_name": "Life Giving Foundation",
+  "description": "Life Giving Foundation is a faith-inspired humanitarian organization founded by Sophia Sakupwanya, dedicated to empowering communities, transforming lives, and bringing light to those in need through education, healthcare, and community development in Zimbabwe.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0A0F1C",
+  "theme_color": "#6B2D8B",
+  "orientation": "portrait-primary",
+  "lang": "en",
+  "dir": "ltr",
+  "categories": ["nonprofit", "education", "health"],
+  "icons": [
+    {
+      "src": "/images/logo/logo.jpeg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "/images/logo/logo.jpeg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ]
+}
+

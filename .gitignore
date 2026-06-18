@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+/website/node_modules/
+
+# Next.js build output
+.next/
+/website/.next/
+out/
+/website/out/
+
+# IDE / System files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Local env files
+.env*.local
+.env
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Other temp files
+*.pem
+*.tsbuildinfo
+website/next-env.d.ts
