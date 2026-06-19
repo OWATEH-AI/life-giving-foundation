@@ -2,9 +2,10 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
-import { X, ZoomIn } from "lucide-react";
+import { X, ZoomIn, ArrowLeft } from "lucide-react";
 
 const images = [
   { src: "/images/gallery/community-gathering.jpg", alt: "Community Gathering" },
@@ -38,6 +39,26 @@ export default function GalleryPage() {
       {/* Page Header */}
       <section style={{ padding: "4rem 0 2rem", textAlign: "center" }}>
         <ScrollReveal>
+          <div style={{ textAlign: "left", maxWidth: "1280px", margin: "0 auto", padding: "0 clamp(1rem, 4vw, 2rem)", marginBottom: "1.5rem" }}>
+            <Link
+              href="/"
+              style={{
+                display: "inline-flex",
+                alignItems: "center",
+                gap: "0.5rem",
+                textDecoration: "none",
+                color: "var(--color-text-muted)",
+                border: "1px solid rgba(0, 0, 0, 0.12)",
+                borderRadius: "var(--radius-md)",
+                padding: "0.55rem 1rem",
+                fontSize: "0.9rem",
+                transition: "all 0.2s ease",
+              }}
+            >
+              <ArrowLeft size={16} />
+              Back to Home
+            </Link>
+          </div>
           <h1
             style={{
               fontFamily: "var(--font-heading)",

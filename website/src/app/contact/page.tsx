@@ -1,9 +1,10 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { SectionHeader } from "@/components/ui/SectionHeader";
-import { MapPin, Phone, Mail, Clock, Send } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, Send, ArrowLeft } from "lucide-react";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -35,6 +36,26 @@ export default function ContactPage() {
           }}
         >
           <ScrollReveal>
+            <div style={{ textAlign: "left", marginBottom: "1.5rem" }}>
+              <Link
+                href="/"
+                style={{
+                  display: "inline-flex",
+                  alignItems: "center",
+                  gap: "0.5rem",
+                  textDecoration: "none",
+                  color: "var(--color-text-muted)",
+                  border: "1px solid rgba(0, 0, 0, 0.12)",
+                  borderRadius: "var(--radius-md)",
+                  padding: "0.55rem 1rem",
+                  fontSize: "0.9rem",
+                  transition: "all 0.2s ease",
+                }}
+              >
+                <ArrowLeft size={16} />
+                Back to Home
+              </Link>
+            </div>
             <SectionHeader
               label="Get in Touch"
               title="We'd Love to Hear From You"

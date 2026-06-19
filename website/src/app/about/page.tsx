@@ -1,9 +1,10 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { SectionHeader } from "@/components/ui/SectionHeader";
-import { Heart, Target, Sparkles, Users } from "lucide-react";
+import { Heart, Target, Sparkles, Users, ArrowLeft } from "lucide-react";
 
 export default function AboutPage() {
   return (
@@ -50,6 +51,25 @@ export default function AboutPage() {
           }}
         >
           <ScrollReveal>
+            <Link
+              href="/"
+              style={{
+                display: "inline-flex",
+                alignItems: "center",
+                gap: "0.5rem",
+                textDecoration: "none",
+                color: "rgba(255, 255, 255, 0.78)",
+                border: "1px solid rgba(255, 255, 255, 0.12)",
+                borderRadius: "var(--radius-md)",
+                padding: "0.55rem 1rem",
+                marginBottom: "1.5rem",
+                fontSize: "0.9rem",
+                transition: "all 0.2s ease",
+              }}
+            >
+              <ArrowLeft size={16} />
+              Back to Home
+            </Link>
             <h1
               style={{
                 fontFamily: "var(--font-heading)",

@@ -1,7 +1,5 @@
 "use client";
 
-import { Sparkles } from "lucide-react";
-
 export function ScrollingMarquee() {
   const items = [
     "Empowering Communities",
@@ -35,7 +33,7 @@ export function ScrollingMarquee() {
         {duplicatedItems.map((item, index) => (
           <span key={index} className="marquee-item">
             {item}
-            <Sparkles size={14} style={{ color: "var(--color-gold)", margin: "0 1.75rem", flexShrink: 0 }} />
+            <span style={{ color: "var(--color-gold)", margin: "0 1.75rem", flexShrink: 0, fontSize: "0.6rem" }}>●</span>
           </span>
         ))}
       </div>
