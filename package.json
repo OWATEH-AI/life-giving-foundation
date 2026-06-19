@@ -5,5 +5,8 @@
   "scripts": {
     "build": "cd website && npm ci && npm run build",
     "dev": "cd website && npm run dev"
+  },
+  "engines": {
+    "node": ">=22.0.0"
   }
 }
