@@ -310,7 +310,7 @@ export default function DonatePage() {
 
                   <div style={{ borderTop: "1px solid rgba(0,0,0,0.05)", paddingTop: "1.5rem" }}>
                     <h4 style={{ fontFamily: "var(--font-heading)", fontSize: "1.1rem", fontWeight: 700, color: "var(--color-text)", marginBottom: "0.75rem" }}>
-                      Receipts & Accountability
+                      Receipts and Accountability
                     </h4>
                     <p style={{ color: "var(--color-text-muted)", fontSize: "0.9rem", lineHeight: 1.6 }}>
                       For every pledge made through our form, our finance team will reach out directly to arrange convenient transfer options and issue an official tax-exempt donation receipt.
