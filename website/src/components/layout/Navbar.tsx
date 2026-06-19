@@ -138,41 +138,44 @@ export function Navbar() {
             </div>
           </Link>
 
-          {/* Desktop Nav */}
-          <nav
-            style={{
-              display: "flex",
-              alignItems: "center",
-              gap: "1.5rem",
-            }}
-            className="desktop-nav"
-          >
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                style={{
-                  fontFamily: "var(--font-accent)",
-                  fontSize: "0.9rem",
-                  fontWeight: 500,
-                  color: "rgba(255, 255, 255, 0.85)",
-                  textDecoration: "none",
-                  letterSpacing: "0.02em",
-                  position: "relative",
-                  transition: "color 0.3s ease",
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.color = "var(--color-gold)";
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.color = "rgba(255, 255, 255, 0.85)";
-                }}
-              >
-                {link.label}
-              </Link>
-            ))}
+          {/* Navigation Controls Group */}
+          <div style={{ display: "flex", alignItems: "center", gap: "1rem" }}>
+            {/* Desktop Nav */}
+            <nav
+              style={{
+                display: "flex",
+                alignItems: "center",
+                gap: "1.5rem",
+              }}
+              className="desktop-nav"
+            >
+              {navLinks.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  style={{
+                    fontFamily: "var(--font-accent)",
+                    fontSize: "0.9rem",
+                    fontWeight: 500,
+                    color: "rgba(255, 255, 255, 0.85)",
+                    textDecoration: "none",
+                    letterSpacing: "0.02em",
+                    position: "relative",
+                    transition: "color 0.3s ease",
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.color = "var(--color-gold)";
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.color = "rgba(255, 255, 255, 0.85)";
+                  }}
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </nav>
 
-            {/* Dark Mode Toggle */}
+            {/* Always-visible Theme Toggle Button (Icon only) */}
             <button
               onClick={toggleTheme}
               style={{
@@ -203,29 +206,32 @@ export function Navbar() {
               {theme === "light" ? <Moon size={18} /> : <Sun size={18} />}
             </button>
 
-            <Link href="/donate" className="btn-primary" style={{ padding: "0.65rem 1.5rem", fontSize: "0.85rem" }}>
-              <Heart size={16} />
-              Donate Now
-            </Link>
-          </nav>
+            {/* Desktop Donate Button wrapper */}
+            <div className="desktop-nav" style={{ display: "flex" }}>
+              <Link href="/donate" className="btn-primary" style={{ padding: "0.65rem 1.5rem", fontSize: "0.85rem" }}>
+                <Heart size={16} />
+                Donate Now
+              </Link>
+            </div>
 
-          {/* Mobile Hamburger */}
-          <button
-            onClick={() => setIsMobileOpen(!isMobileOpen)}
-            className="mobile-menu-btn"
-            aria-label="Toggle menu"
-            style={{
-              display: "none",
-              background: "transparent",
-              border: "none",
-              color: "white",
-              cursor: "pointer",
-              padding: "0.5rem",
-              zIndex: 1010,
-            }}
-          >
-            {isMobileOpen ? <X size={28} /> : <Menu size={28} />}
-          </button>
+            {/* Mobile Hamburger */}
+            <button
+              onClick={() => setIsMobileOpen(!isMobileOpen)}
+              className="mobile-menu-btn"
+              aria-label="Toggle menu"
+              style={{
+                display: "none",
+                background: "transparent",
+                border: "none",
+                color: "white",
+                cursor: "pointer",
+                padding: "0.5rem",
+                zIndex: 1010,
+              }}
+            >
+              {isMobileOpen ? <X size={28} /> : <Menu size={28} />}
+            </button>
+          </div>
         </div>
       </motion.header>
 
@@ -294,29 +300,7 @@ export function Navbar() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5, duration: 0.4 }}
-              style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "1.5rem" }}
             >
-              {/* Mobile Theme Toggle */}
-              <button
-                onClick={toggleTheme}
-                style={{
-                  background: "rgba(255, 255, 255, 0.1)",
-                  border: "1px solid rgba(255, 255, 255, 0.15)",
-                  color: "white",
-                  padding: "0.75rem 1.5rem",
-                  borderRadius: "var(--radius-full)",
-                  display: "flex",
-                  alignItems: "center",
-                  gap: "0.5rem",
-                  cursor: "pointer",
-                  fontFamily: "var(--font-accent)",
-                  fontSize: "1rem",
-                }}
-              >
-                {theme === "light" ? <Moon size={18} /> : <Sun size={18} />}
-                {theme === "light" ? "Dark Mode" : "Light Mode"}
-              </button>
-
               <Link
                 href="/donate"
                 onClick={() => setIsMobileOpen(false)}

@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { ChevronDown, Heart, ArrowRight } from "lucide-react";
+import { ScrollingMarquee } from "@/components/sections/ScrollingMarquee";
 
 const slides = [
   {
@@ -323,7 +324,7 @@ export function HeroSlideshow() {
         transition={{ delay: 1.5 }}
         style={{
           position: "absolute",
-          bottom: "2rem",
+          bottom: "4.5rem",
           left: "50%",
           zIndex: 3,
           animation: "bounceDown 2s infinite",
@@ -332,6 +333,19 @@ export function HeroSlideshow() {
       >
         <ChevronDown size={28} />
       </motion.div>
+
+      {/* Base Marquee */}
+      <div
+        style={{
+          position: "absolute",
+          bottom: 0,
+          left: 0,
+          right: 0,
+          zIndex: 10,
+        }}
+      >
+        <ScrollingMarquee />
+      </div>
     </section>
   );
 }
