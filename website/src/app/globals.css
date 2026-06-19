@@ -418,3 +418,44 @@ h1, h2, h3, h4, h5, h6 {
 #__next-build-indicator {
   display: none !important;
 }
+
+/* ===== Dark Mode Styles ===== */
+html.dark {
+  color-scheme: dark;
+  --color-light: #0A0F1C;
+  --color-light-warm: #111827;
+  --color-light-muted: #1E293B;
+
+  --color-text: #F8F8F8;
+  --color-text-muted: #9CA3AF;
+
+  --gradient-warm: linear-gradient(180deg, #111827 0%, #0A0F1C 100%);
+  --color-card-bg: #1A2235;
+  --color-input-bg: #111827;
+  --color-input-border: rgba(255, 255, 255, 0.1);
+  --color-input-text: #F8F8F8;
+}
+
+:root {
+  --color-card-bg: #FFFFFF;
+  --color-input-bg: #FFFFFF;
+  --color-input-border: rgba(0, 0, 0, 0.1);
+  --color-input-text: var(--color-text);
+}
+
+html.dark body {
+  background: var(--color-light);
+  color: var(--color-text);
+}
+
+html.dark .payment-method {
+  background: #1A2235 !important;
+  color: #F8F8F8 !important;
+  border-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+html.dark .payment-method:hover {
+  border-color: var(--color-gold) !important;
+  background: rgba(201, 168, 76, 0.04) !important;
+}
+

@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { Menu, X, Heart } from "lucide-react";
+import { Menu, X, Heart, Sun, Moon } from "lucide-react";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -17,6 +17,7 @@ const navLinks = [
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileOpen, setIsMobileOpen] = useState(false);
+  const [theme, setTheme] = useState<"light" | "dark">("light");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -25,6 +26,28 @@ export function Navbar() {
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  useEffect(() => {
+    const savedTheme = localStorage.getItem("theme") as "light" | "dark" | null;
+    const initialTheme = savedTheme || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    setTheme(initialTheme);
+    if (initialTheme === "dark") {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  }, []);
+
+  const toggleTheme = () => {
+    const newTheme = theme === "light" ? "dark" : "light";
+    setTheme(newTheme);
+    localStorage.setItem("theme", newTheme);
+    if (newTheme === "dark") {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  };
 
   useEffect(() => {
     if (isMobileOpen) {
@@ -50,14 +73,10 @@ export function Navbar() {
           right: 0,
           zIndex: 1000,
           padding: isScrolled ? "0.5rem 0" : "1rem 0",
-          background: isScrolled
-            ? "rgba(10, 15, 28, 0.92)"
-            : "rgba(10, 15, 28, 0.3)",
+          background: "rgba(10, 15, 28, 0.95)",
           backdropFilter: "blur(20px)",
           WebkitBackdropFilter: "blur(20px)",
-          borderBottom: isScrolled
-            ? "1px solid rgba(201, 168, 76, 0.15)"
-            : "1px solid transparent",
+          borderBottom: "1px solid rgba(201, 168, 76, 0.15)",
           transition: "all 0.4s cubic-bezier(0.4, 0, 0.2, 1)",
         }}
       >
@@ -124,7 +143,7 @@ export function Navbar() {
             style={{
               display: "flex",
               alignItems: "center",
-              gap: "2rem",
+              gap: "1.5rem",
             }}
             className="desktop-nav"
           >
@@ -152,6 +171,38 @@ export function Navbar() {
                 {link.label}
               </Link>
             ))}
+
+            {/* Dark Mode Toggle */}
+            <button
+              onClick={toggleTheme}
+              style={{
+                background: "rgba(255, 255, 255, 0.08)",
+                border: "1px solid rgba(255, 255, 255, 0.12)",
+                color: "white",
+                width: "40px",
+                height: "40px",
+                borderRadius: "50%",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                cursor: "pointer",
+                transition: "all 0.3s ease",
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.background = "rgba(255, 255, 255, 0.15)";
+                e.currentTarget.style.color = "var(--color-gold)";
+                e.currentTarget.style.transform = "scale(1.05)";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.background = "rgba(255, 255, 255, 0.08)";
+                e.currentTarget.style.color = "white";
+                e.currentTarget.style.transform = "scale(1)";
+              }}
+              aria-label="Toggle theme"
+            >
+              {theme === "light" ? <Moon size={18} /> : <Sun size={18} />}
+            </button>
+
             <Link href="/donate" className="btn-primary" style={{ padding: "0.65rem 1.5rem", fontSize: "0.85rem" }}>
               <Heart size={16} />
               Donate Now
@@ -243,12 +294,34 @@ export function Navbar() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5, duration: 0.4 }}
+              style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "1.5rem" }}
             >
+              {/* Mobile Theme Toggle */}
+              <button
+                onClick={toggleTheme}
+                style={{
+                  background: "rgba(255, 255, 255, 0.1)",
+                  border: "1px solid rgba(255, 255, 255, 0.15)",
+                  color: "white",
+                  padding: "0.75rem 1.5rem",
+                  borderRadius: "var(--radius-full)",
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "0.5rem",
+                  cursor: "pointer",
+                  fontFamily: "var(--font-accent)",
+                  fontSize: "1rem",
+                }}
+              >
+                {theme === "light" ? <Moon size={18} /> : <Sun size={18} />}
+                {theme === "light" ? "Dark Mode" : "Light Mode"}
+              </button>
+
               <Link
                 href="/donate"
                 onClick={() => setIsMobileOpen(false)}
                 className="btn-primary"
-                style={{ marginTop: "1rem" }}
+                style={{ display: "inline-flex" }}
               >
                 <Heart size={18} />
                 Donate Now

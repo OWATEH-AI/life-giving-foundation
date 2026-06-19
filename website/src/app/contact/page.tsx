@@ -103,7 +103,7 @@ export default function ContactPage() {
             <ScrollReveal direction="right">
               <div
                 style={{
-                  background: "white",
+                  background: "var(--color-card-bg, white)",
                   padding: "3rem",
                   borderRadius: "var(--radius-xl)",
                   boxShadow: "var(--shadow-lg)",
@@ -124,7 +124,7 @@ export default function ContactPage() {
                         value={formData.name}
                         onChange={handleChange}
                         required
-                        style={{ padding: "0.8rem 1rem", borderRadius: "var(--radius-md)", border: "1px solid rgba(0,0,0,0.1)", outline: "none", fontFamily: "var(--font-body)" }}
+                        style={{ padding: "0.8rem 1rem", borderRadius: "var(--radius-md)", border: "1px solid var(--color-input-border)", background: "var(--color-input-bg)", color: "var(--color-input-text)", outline: "none", fontFamily: "var(--font-body)" }}
                         placeholder="John Doe"
                       />
                     </div>
@@ -137,7 +137,7 @@ export default function ContactPage() {
                         value={formData.email}
                         onChange={handleChange}
                         required
-                        style={{ padding: "0.8rem 1rem", borderRadius: "var(--radius-md)", border: "1px solid rgba(0,0,0,0.1)", outline: "none", fontFamily: "var(--font-body)" }}
+                        style={{ padding: "0.8rem 1rem", borderRadius: "var(--radius-md)", border: "1px solid var(--color-input-border)", background: "var(--color-input-bg)", color: "var(--color-input-text)", outline: "none", fontFamily: "var(--font-body)" }}
                         placeholder="john@example.com"
                       />
                     </div>
@@ -151,7 +151,7 @@ export default function ContactPage() {
                       value={formData.subject}
                       onChange={handleChange}
                       required
-                      style={{ padding: "0.8rem 1rem", borderRadius: "var(--radius-md)", border: "1px solid rgba(0,0,0,0.1)", outline: "none", fontFamily: "var(--font-body)" }}
+                      style={{ padding: "0.8rem 1rem", borderRadius: "var(--radius-md)", border: "1px solid var(--color-input-border)", background: "var(--color-input-bg)", color: "var(--color-input-text)", outline: "none", fontFamily: "var(--font-body)" }}
                       placeholder="How can we help you?"
                     />
                   </div>
@@ -164,7 +164,7 @@ export default function ContactPage() {
                       onChange={handleChange}
                       required
                       rows={5}
-                      style={{ padding: "0.8rem 1rem", borderRadius: "var(--radius-md)", border: "1px solid rgba(0,0,0,0.1)", outline: "none", fontFamily: "var(--font-body)", resize: "vertical" }}
+                      style={{ padding: "0.8rem 1rem", borderRadius: "var(--radius-md)", border: "1px solid var(--color-input-border)", background: "var(--color-input-bg)", color: "var(--color-input-text)", outline: "none", fontFamily: "var(--font-body)", resize: "vertical" }}
                       placeholder="Write your message here..."
                     />
                   </div>
