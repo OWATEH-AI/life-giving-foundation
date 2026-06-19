@@ -434,6 +434,16 @@ html.dark {
   --color-input-bg: #111827;
   --color-input-border: rgba(255, 255, 255, 0.1);
   --color-input-text: #F8F8F8;
+
+  /* Premium High-Contrast Brand Colors for Dark Mode Readability */
+  --color-primary: #7C8DF5;
+  --color-primary-light: #9AA7FF;
+  --color-purple: #B276DF;
+  --color-purple-light: #D4A5FF;
+  --color-teal: #4FA3B5;
+  --color-teal-light: #7DD3FC;
+  --color-gold: #F2D272;
+  --color-gold-light: #FFE082;
 }
 
 :root {

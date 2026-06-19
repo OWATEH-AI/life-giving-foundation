@@ -100,7 +100,7 @@ export function ProgramsOverview() {
                   style={{
                     borderRadius: "var(--radius-lg)",
                     overflow: "hidden",
-                    background: "white",
+                    background: "var(--color-card-bg, white)",
                     border: "1px solid rgba(0, 0, 0, 0.06)",
                     boxShadow: isHovered ? "var(--shadow-lg)" : "var(--shadow-sm)",
                     transition: "all 0.4s cubic-bezier(0.4, 0, 0.2, 1)",

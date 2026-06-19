@@ -97,7 +97,7 @@ export function TestimonialsCarousel() {
             >
               <div
                 style={{
-                  background: "white",
+                  background: "var(--color-card-bg, white)",
                   borderRadius: "var(--radius-xl)",
                   padding: "clamp(2rem, 4vw, 3.5rem)",
                   boxShadow: "var(--shadow-md)",
@@ -179,7 +179,7 @@ export function TestimonialsCarousel() {
                 width: "44px",
                 height: "44px",
                 borderRadius: "50%",
-                background: "white",
+                background: "var(--color-card-bg, white)",
                 border: "1px solid rgba(0, 0, 0, 0.08)",
                 boxShadow: "var(--shadow-md)",
                 cursor: "pointer",
@@ -194,7 +194,7 @@ export function TestimonialsCarousel() {
                 e.currentTarget.style.color = "white";
               }}
               onMouseLeave={(e) => {
-                e.currentTarget.style.background = "white";
+                e.currentTarget.style.background = "var(--color-card-bg, white)";
                 e.currentTarget.style.color = "var(--color-text)";
               }}
             >
@@ -207,7 +207,7 @@ export function TestimonialsCarousel() {
                 width: "44px",
                 height: "44px",
                 borderRadius: "50%",
-                background: "white",
+                background: "var(--color-card-bg, white)",
                 border: "1px solid rgba(0, 0, 0, 0.08)",
                 boxShadow: "var(--shadow-md)",
                 cursor: "pointer",
@@ -222,7 +222,7 @@ export function TestimonialsCarousel() {
                 e.currentTarget.style.color = "white";
               }}
               onMouseLeave={(e) => {
-                e.currentTarget.style.background = "white";
+                e.currentTarget.style.background = "var(--color-card-bg, white)";
                 e.currentTarget.style.color = "var(--color-text)";
               }}
             >

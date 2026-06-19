@@ -5,6 +5,7 @@ import { ImpactStats } from "@/components/sections/ImpactStats";
 import { TestimonialsCarousel } from "@/components/sections/TestimonialsCarousel";
 import { CTABanner } from "@/components/sections/CTABanner";
 import { LatestNews } from "@/components/sections/LatestNews";
+import { ScrollingMarquee } from "@/components/sections/ScrollingMarquee";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <TestimonialsCarousel />
       <CTABanner />
       <LatestNews />
+      <ScrollingMarquee />
     </>
   );
 }

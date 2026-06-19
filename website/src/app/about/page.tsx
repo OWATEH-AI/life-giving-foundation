@@ -175,7 +175,7 @@ export default function AboutPage() {
                 <ScrollReveal key={value.title} delay={i * 0.1}>
                   <div
                     style={{
-                      background: "white",
+                      background: "var(--color-card-bg, white)",
                       padding: "2.5rem 2rem",
                       borderRadius: "var(--radius-lg)",
                       boxShadow: "var(--shadow-sm)",

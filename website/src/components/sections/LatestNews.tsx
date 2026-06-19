@@ -156,7 +156,7 @@ export function LatestNews() {
                   onMouseEnter={() => setHoveredId(item.id)}
                   onMouseLeave={() => setHoveredId(null)}
                   style={{
-                    background: "white",
+                    background: "var(--color-card-bg, white)",
                     borderRadius: "var(--radius-lg)",
                     overflow: "hidden",
                     boxShadow: isHovered ? "var(--shadow-lg)" : "var(--shadow-sm)",
