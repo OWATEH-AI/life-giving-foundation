@@ -42,7 +42,7 @@ export function WhatsAppButton() {
     >
       <div
         style={{
-          background: "white",
+          background: "var(--color-card-bg, white)",
           color: "var(--color-text)",
           borderRadius: "var(--radius-full)",
           padding: "0.55rem 0.85rem",
@@ -51,6 +51,7 @@ export function WhatsAppButton() {
           fontFamily: "var(--font-accent)",
           fontWeight: 600,
           maxWidth: "220px",
+          border: "1px solid var(--color-input-border, rgba(0, 0, 0, 0.05))",
         }}
         className="whatsapp-helper"
       >
