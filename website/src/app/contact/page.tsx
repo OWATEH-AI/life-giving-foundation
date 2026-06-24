@@ -113,9 +113,17 @@ export default function ContactPage() {
                   </div>
                 </div>
 
-                {/* Map Placeholder */}
-                <div style={{ height: "250px", background: "var(--color-light-warm)", borderRadius: "var(--radius-lg)", border: "1px solid rgba(0,0,0,0.1)", display: "flex", alignItems: "center", justifyContent: "center", color: "var(--color-text-muted)" }}>
-                  [Interactive Map Integration]
+                {/* Interactive Map */}
+                <div style={{ height: "300px", background: "var(--color-light-warm)", borderRadius: "var(--radius-lg)", overflow: "hidden", border: "1px solid rgba(0,0,0,0.1)" }}>
+                  <iframe
+                    src="https://maps.google.com/maps?q=Mungate%20Business%20Center,%20Domboshava,%20Zimbabwe&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    loading="lazy"
+                    title="Mungate Business Center Map"
+                  />
                 </div>
               </div>
             </ScrollReveal>
@@ -125,7 +133,7 @@ export default function ContactPage() {
               <div
                 style={{
                   background: "var(--color-card-bg, white)",
-                  padding: "3rem",
+                  padding: "clamp(1.5rem, 5vw, 3rem)",
                   borderRadius: "var(--radius-xl)",
                   boxShadow: "var(--shadow-lg)",
                   border: "1px solid rgba(0,0,0,0.05)",
@@ -135,7 +143,7 @@ export default function ContactPage() {
                   Send us a Message
                 </h3>
                 <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: "1.5rem" }}>
-                  <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1.5rem" }}>
+                  <div style={{ display: "grid", gap: "1.5rem" }} className="form-grid">
                     <div style={{ display: "flex", flexDirection: "column", gap: "0.5rem" }}>
                       <label htmlFor="name" style={{ fontSize: "0.9rem", fontWeight: 500, color: "var(--color-text)" }}>Your Name</label>
                       <input
@@ -198,6 +206,17 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
+
+      <style jsx>{`
+        .form-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+        @media (max-width: 768px) {
+          .form-grid {
+            grid-template-columns: 1fr !important;
+          }
+        }
+      `}</style>
     </div>
   );
 }
