@@ -37,7 +37,7 @@ export default function GalleryPage() {
   return (
     <div style={{ paddingTop: "80px", minHeight: "100vh", background: "var(--color-light)" }}>
       {/* Page Header */}
-      <section style={{ padding: "4rem 0 2rem", textAlign: "center" }}>
+      <section style={{ padding: "2rem 0 1rem", textAlign: "center" }}>
         <ScrollReveal>
           <div style={{ textAlign: "left", maxWidth: "1280px", margin: "0 auto", padding: "0 clamp(1rem, 4vw, 2rem)", marginBottom: "1.5rem" }}>
             <Link

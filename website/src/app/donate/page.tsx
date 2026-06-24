@@ -37,7 +37,7 @@ export default function DonatePage() {
       <section
         style={{
           position: "relative",
-          padding: "5rem 0",
+          padding: "2.5rem 0",
           background: "var(--color-dark)",
           overflow: "hidden",
         }}

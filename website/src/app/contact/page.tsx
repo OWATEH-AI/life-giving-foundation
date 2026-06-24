@@ -26,8 +26,8 @@ export default function ContactPage() {
   };
 
   return (
-    <div style={{ paddingTop: "100px", minHeight: "100vh", background: "var(--color-light)" }}>
-      <section style={{ padding: "4rem 0 6rem" }}>
+    <div style={{ paddingTop: "80px", minHeight: "100vh", background: "var(--color-light)" }}>
+      <section style={{ padding: "2rem 0 3rem" }}>
         <div
           style={{
             maxWidth: "1280px",

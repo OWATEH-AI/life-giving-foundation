@@ -6,12 +6,12 @@ export default function CreditsPage() {
     <div
       style={{
         minHeight: "100vh",
-        paddingTop: "100px",
+        paddingTop: "80px",
         background:
           "linear-gradient(180deg, var(--color-dark) 0%, var(--color-primary-dark) 100%)",
       }}
     >
-      <section style={{ padding: "3rem 0 5rem" }}>
+      <section style={{ padding: "1.5rem 0 2.5rem" }}>
         <div
           style={{
             maxWidth: "980px",

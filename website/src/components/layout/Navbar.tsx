@@ -252,63 +252,117 @@ export function Navbar() {
               display: "flex",
               flexDirection: "column",
               alignItems: "center",
-              justifyContent: "center",
-              gap: "2rem",
+              justifyContent: "space-between",
+              padding: "4rem 1.5rem 2.5rem 1.5rem",
             }}
           >
-            <Image
-              src="/images/logo/logo.jpeg"
-              alt="Life Giving Foundation"
-              width={80}
-              height={80}
+            {/* Center Menu Links Container */}
+            <div
               style={{
-                borderRadius: "50%",
-                border: "2px solid rgba(201, 168, 76, 0.4)",
-                marginBottom: "1rem",
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                justifyContent: "center",
+                flex: 1,
+                gap: "1.5rem",
+                width: "100%",
               }}
-            />
-            {navLinks.map((link, i) => (
+            >
+              <Image
+                src="/images/logo/logo.jpeg"
+                alt="Life Giving Foundation"
+                width={70}
+                height={70}
+                style={{
+                  borderRadius: "50%",
+                  border: "2px solid rgba(201, 168, 76, 0.4)",
+                  marginBottom: "0.5rem",
+                }}
+              />
+              {navLinks.map((link, i) => (
+                <motion.div
+                  key={link.href}
+                  initial={{ opacity: 0, y: 15 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.05 + i * 0.05, duration: 0.3 }}
+                >
+                  <Link
+                    href={link.href}
+                    onClick={() => setIsMobileOpen(false)}
+                    style={{
+                      fontFamily: "var(--font-heading)",
+                      fontSize: "1.4rem",
+                      fontWeight: 600,
+                      color: "white",
+                      textDecoration: "none",
+                      transition: "color 0.3s ease",
+                    }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.color = "var(--color-gold)";
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.color = "white";
+                    }}
+                  >
+                    {link.label}
+                  </Link>
+                </motion.div>
+              ))}
               <motion.div
-                key={link.href}
-                initial={{ opacity: 0, y: 20 }}
+                initial={{ opacity: 0, y: 15 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.1 + i * 0.08, duration: 0.4 }}
+                transition={{ delay: 0.35, duration: 0.3 }}
               >
                 <Link
-                  href={link.href}
+                  href="/donate"
                   onClick={() => setIsMobileOpen(false)}
-                  style={{
-                    fontFamily: "var(--font-heading)",
-                    fontSize: "1.6rem",
-                    fontWeight: 600,
-                    color: "white",
-                    textDecoration: "none",
-                    transition: "color 0.3s ease",
-                  }}
-                  onMouseEnter={(e) => {
-                    e.currentTarget.style.color = "var(--color-gold)";
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.color = "white";
-                  }}
+                  className="btn-primary"
+                  style={{ display: "inline-flex" }}
                 >
-                  {link.label}
+                  <Heart size={18} />
+                  Donate Now
                 </Link>
               </motion.div>
-            ))}
+            </div>
+
+            {/* Bottom Credits Section */}
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.5, duration: 0.4 }}
+              transition={{ delay: 0.45, duration: 0.3 }}
+              style={{
+                width: "100%",
+                borderTop: "1px solid rgba(255, 255, 255, 0.08)",
+                paddingTop: "1.5rem",
+                textAlign: "center",
+              }}
             >
               <Link
-                href="/donate"
+                href="/credits"
                 onClick={() => setIsMobileOpen(false)}
-                className="btn-primary"
-                style={{ display: "inline-flex" }}
+                style={{
+                  display: "inline-flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  gap: "0.25rem",
+                  fontSize: "0.75rem",
+                  textDecoration: "none",
+                  letterSpacing: "0.06em",
+                  color: "white",
+                }}
               >
-                <Heart size={18} />
-                Donate Now
+                <span style={{ color: "rgba(255, 255, 255, 0.45)", textTransform: "uppercase" }}>
+                  Website Powered By
+                </span>
+                <span style={{ color: "var(--color-gold)", fontWeight: 700, textTransform: "uppercase" }}>
+                  ARTGALZIM-OWA TECHNOLOGIES
+                </span>
+                <span style={{ color: "rgba(255, 255, 255, 0.45)", textTransform: "uppercase" }}>
+                  By
+                </span>
+                <span style={{ color: "white", fontWeight: 600, textTransform: "uppercase" }}>
+                  SAMUEL T SAMOYO
+                </span>
               </Link>
             </motion.div>
           </motion.div>
